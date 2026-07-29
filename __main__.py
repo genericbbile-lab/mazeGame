@@ -304,7 +304,7 @@ def loop2():
     if goal==0:
        print('You Win')
        pygame.mixer.init()
-       pygame.mixer.music.load("victoryff.swf.mp3")
+       pygame.mixer.music.load("mazeGame\\victoryff.swf.mp3")
        pygame.mixer.music.play()
        
        time.sleep(4)
@@ -384,7 +384,7 @@ def loop2():
       coins+=1
     if ((monster['coordinates'][0]==x and monster['coordinates'][1]==y)or(monster2['coordinates'][0]==x and monster2['coordinates'][1]==y)):
         pygame.mixer.init()
-        pygame.mixer.music.load("fnaf-6-jumpscare-sound-effect.mp3")
+        pygame.mixer.music.load("mazeGame\\fnaf-6-jumpscare-sound-effect.mp3")
         pygame.mixer.music.play()
         print("You Lose")
                 
@@ -395,7 +395,7 @@ def loop2():
     
     if ((monster['coordinates'][0]==x and monster['coordinates'][1]==y)or(monster2['coordinates'][0]==x and monster2['coordinates'][1]==y)):
       pygame.mixer.init()
-      pygame.mixer.music.load("fnaf-6-jumpscare-sound-effect.mp3")
+      pygame.mixer.music.load("mazeGame\\fnaf-6-jumpscare-sound-effect.mp3")
       pygame.mixer.music.play()
       print("You Lose")
       
@@ -409,7 +409,7 @@ def main() -> None:
     warnings.simplefilter(action='ignore')
     warnings.simplefilter(action='ignore', category=FutureWarning)
     pygame.mixer.init()
-    pygame.mixer.music.load("horror_music.mp3.mp3")
+    pygame.mixer.music.load("mazeGame\\horror_music.mp3.mp3")
     pygame.mixer.music.play()
     print("Your goal is to navigate through the maze and collect all the coins.")
     print("Beware, there are monsters who will hunt you down")
